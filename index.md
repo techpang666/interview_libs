@@ -7,6 +7,10 @@
 - [一些理论输出](https://github.com/techpang666/techpang666.github.io/tree/main/core_libs/interview_libs)
 - [html/css小分队](https://github.com/techpang666/html_css_js/tree/master/code)
 - [js小分队](https://github.com/techpang666/js_relearn/tree/master/code)
+
+------
+## **一些小分队**
+- [一份超级面试文档(未上线)](https://techpang.top/)
 - [更多面试题⚡️](https://github.com/techpang666/techpang666.github.io/blob/main/core_libs/interview_libs/interview_core/interview_core_libs.md)
 
 ------
