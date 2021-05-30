@@ -14,6 +14,12 @@
 - [更多面试题⚡️](https://github.com/techpang666/techpang666.github.io/blob/main/core_libs/interview_libs/interview_core/interview_core_libs.md)
 
 ------
+## **第2天(210530)**
+- [html的元素有哪些](https://github.com/techpang666/techpang666.github.io/blob/main/core_libs/interview_libs/html_libs/some_tag.md)
+- [css3有哪些新增的特性](https://github.com/techpang666/techpang666.github.io/blob/main/core_libs/interview_libs/css_libs/css3_new_thing.md)
+- [写一个方法去掉字符串中的空格](https://github.com/techpang666/js_relearn/blob/master/code/str/clear_str_space.js)
+
+------
 ## **第1天(210529)**
 - [页面导入样式的时候 使用link和@import有什么区别](https://github.com/techpang666/techpang666.github.io/blob/main/core_libs/interview_libs/html_libs/link_import.md)
 - [说一下圣杯布局和双飞翼布局的理解和区别并用代码实现](https://github.com/techpang666/techpang666.github.io/blob/main/core_libs/interview_libs/css_libs/grail_and_double_wings.md)
