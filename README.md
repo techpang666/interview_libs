@@ -1,6 +1,6 @@
 
 # **坚持输出👨‍💻**
-- [做点有价值的事儿💰(刷题入口)](https://github.com/techpang666/interview_libs/blob/master/index.md)
+- [做点有价值的事儿💰(刷题入口)](https://techpang.top/interview_libs/)
 
 ------
 ## **一些说明**
