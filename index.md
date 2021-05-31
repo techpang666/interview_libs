@@ -14,6 +14,10 @@
 - [更多面试题⚡️](https://github.com/techpang666/techpang666.github.io/blob/main/core_libs/interview_libs/interview_core/interview_core_libs.md)
 
 ------
+## **第3天(210531)**
+- [去除字符串中最后一个指定的字符](https://github.com/techpang666/js_relearn/blob/master/code/str/del_last_str.js)
+
+------
 ## **第2天(210530)**
 - [html的元素有哪些](https://github.com/techpang666/techpang666.github.io/blob/main/core_libs/interview_libs/html_libs/some_tag.md)
 - [css3有哪些新增的特性](https://github.com/techpang666/techpang666.github.io/blob/main/core_libs/interview_libs/css_libs/css3_new_thing.md)
