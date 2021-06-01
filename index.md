@@ -6,6 +6,10 @@
 - [加油冲⚡️](https://github.com/techpang666/interview_libs)
 
 ------
+## **第4天(210601)**
+- [写一个方法把下划线命名转成大驼峰命名](https://github.com/techpang666/js_relearn/blob/master/code/str/to_camelCase.js)
+
+------
 ## **第3天(210531)**
 - [去除字符串中最后一个指定的字符](https://github.com/techpang666/js_relearn/blob/master/code/str/del_last_str.js)
 
