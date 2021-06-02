@@ -11,7 +11,7 @@
 
 ------
 ## **第5天(210602)**
-- [写一个把字符串大小写切换的方法](https://github.com/techpang666/interview_libs)
+- [写一个把字符串大小写切换的方法](https://github.com/haizlin/fe-interview/issues/15)
 
 ------
 ## **第4天(210601)**
