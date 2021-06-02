@@ -6,6 +6,10 @@
 - [加油冲⚡️](https://github.com/techpang666/interview_libs)
 
 ------
+## **第5天(210602)**
+- [写一个把字符串大小写切换的方法](https://github.com/techpang666/interview_libs)
+
+------
 ## **第4天(210601)**
 - [写一个方法把下划线命名转成大驼峰命名](https://github.com/techpang666/js_relearn/blob/master/code/str/to_camelCase.js)
 
