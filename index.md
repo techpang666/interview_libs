@@ -6,6 +6,10 @@
 - [加油冲⚡️](https://github.com/techpang666/interview_libs)
 
 ------
+## **第6天(210603)**
+- [写一个判断数据类型的方法](https://github.com/haizlin/fe-interview/issues/27)
+
+------
 ## **第5天(210602)**
 - [写一个把字符串大小写切换的方法](https://github.com/techpang666/interview_libs)
 
