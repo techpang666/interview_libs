@@ -6,6 +6,10 @@
 - [加油冲⚡️](https://github.com/techpang666/interview_libs)
 
 ------
+## **第7天(210604)**
+- [什么是回调函数并写一个例子](https://github.com/haizlin/fe-interview/issues/30)
+
+------
 ## **第6天(210603)**
 - [写一个判断数据类型的方法](https://github.com/haizlin/fe-interview/issues/27)
 
