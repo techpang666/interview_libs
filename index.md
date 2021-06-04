@@ -6,6 +6,10 @@
 - [加油冲⚡️](https://github.com/techpang666/interview_libs)
 
 ------
+## **第8天(210605)**
+- [简要描述下JS有哪些内置的对象](https://github.com/haizlin/fe-interview/issues/33)
+
+------
 ## **第7天(210604)**
 - [什么是回调函数并写一个例子](https://github.com/haizlin/fe-interview/issues/30)
 
