@@ -8,6 +8,10 @@
 - [一些说明📝](https://github.com/techpang666/interview_libs)
 
 ------
+## **第9天(210606)**
+- [说说你对javascript的作用域的理解](https://github.com/haizlin/fe-interview/issues/40)
+
+------
 ## **第8天(210605)**
 - [css常用的布局方式有哪些](https://github.com/techpang666/techpang666.github.io/blob/main/core_libs/interview_libs/interview_core/super_interview.md)
 - [简要描述下JS有哪些内置的对象](https://github.com/haizlin/fe-interview/issues/33)
