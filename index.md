@@ -8,6 +8,10 @@
 - [一些说明📝](https://github.com/techpang666/interview_libs)
 
 ------
+## **第10天(210607)**
+- [写一个数组去重的方法(支持多维数组)](https://github.com/haizlin/fe-interview/issues/48)
+
+------
 ## **第9天(210606)**
 - [说说你对javascript的作用域的理解](https://github.com/haizlin/fe-interview/issues/40)
 
