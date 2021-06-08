@@ -8,6 +8,10 @@
 - [一些说明📝](https://github.com/techpang666/interview_libs)
 
 ------
+## **第12天(210609)**
+- [写一个获取数组的最大值/最小值的方法](https://github.com/haizlin/fe-interview/issues/104)
+
+------
 ## **第11天(210608)**
 - [说说bind/call/apply的区别](https://github.com/haizlin/fe-interview/issues/92)
 
