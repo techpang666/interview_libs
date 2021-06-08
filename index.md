@@ -8,6 +8,10 @@
 - [一些说明📝](https://github.com/techpang666/interview_libs)
 
 ------
+## **第11天(210608)**
+- [说说bind/call/apply的区别](https://github.com/haizlin/fe-interview/issues/92)
+
+------
 ## **第10天(210607)**
 - [写一个数组去重的方法(支持多维数组)](https://github.com/haizlin/fe-interview/issues/48)
 
