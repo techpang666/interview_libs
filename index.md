@@ -8,6 +8,10 @@
 - [一些说明📝](https://github.com/techpang666/interview_libs)
 
 ------
+## **第13天(210610)**
+- [造成内存泄漏的操作有哪些](https://github.com/haizlin/fe-interview/issues/116)
+
+------
 ## **第12天(210609)**
 - [写一个获取数组的最大值/最小值的方法](https://github.com/haizlin/fe-interview/issues/104)
 
