@@ -8,6 +8,10 @@
 - [一些说明📝](https://github.com/techpang666/interview_libs)
 
 ------
+## **第14天(210611)**
+- [window对象和document对象有什么区别](https://github.com/haizlin/fe-interview/issues/157)
+
+------
 ## **第13天(210610)**
 - [造成内存泄漏的操作有哪些](https://github.com/haizlin/fe-interview/issues/116)
 
