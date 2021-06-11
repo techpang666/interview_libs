@@ -25,7 +25,7 @@
 - [js小分队🐎](#js小分队🐎)
   - [如何去掉字符串中的空格](#如何去掉字符串中的空格)
   - [删除字符串中最后一个字符](#删除字符串中最后一个字符)
-  - [写一个方法把下划线命名转成大驼峰命名](#写一个方法把下划线命名转成大驼峰命名)
+  - [写一个方法把下划线命名转成驼峰命名](#写一个方法把下划线命名转成驼峰命名)
   - [造成内存泄漏的操作有哪些](#造成内存泄漏的操作有哪些)
   - [window对象和document对象有什么区别](#window对象和document对象有什么区别)
   - [写一个获取数组的最大最小值的方法](#写一个获取数组的最大最小值的方法)
@@ -241,10 +241,10 @@ function trim(str) {
 	}
 }
 
-console.log(trim('essdgdg'));
+console.log(trim('essdgdg')); /* essdgd */
 ```
 
-### 写一个方法把下划线命名转成大驼峰命名
+### 写一个方法把下划线命名转成驼峰命名
 
 ```js
 function toCamelCase(str) {
@@ -259,7 +259,7 @@ function toCamelCase(str) {
 }
 
 let testStr = 'if_you_are_my_world';
-console.log(toCamelCase(testStr));
+console.log(toCamelCase(testStr)); /* ifYouAreMyWorld */
 ```
 
 ### 造成内存泄漏的操作有哪些
