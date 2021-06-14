@@ -26,6 +26,7 @@
   - [简述下你理解的优雅降级和渐进增强](#简述下你理解的优雅降级和渐进增强)
   - [css可以继承的属性](#css可以继承的属性)
 - [js小分队🐎](#js小分队🐎)
+  - [jq中each和js中forEach的区别](#jq中each和js中forEach的区别)
   - [说一下你对this的理解](#说一下你对this的理解)
   - [用递归实现数组长度为5且元素的随机数在2-32间不重复的值](#用递归实现数组长度为5且元素的随机数在2-32间不重复的值)
   - [如何去掉字符串中的空格](#如何去掉字符串中的空格)
@@ -313,6 +314,48 @@ css有两种盒子模型 分别是标准盒子模型和怪异盒子模型
 
 ---
 ## js小分队🐎
+
+### jq中each和js中forEach的区别
+
+**遍历数组**
+
+```js
+    let arr = [1, 8, 5, 6, 9]
+    let res = arr.forEach((ele, index) => {
+      console.log(ele, index);
+    })
+    console.log(res); /* undefined 没有返回值 */
+```
+
+```js
+    let arr = [1, 8, 5, 6, 9]
+    let res = $.each(arr, (index, ele) => {
+      console.log(index, ele);
+    })
+    console.log(res); /* 被遍历的数组 */
+```
+
+原生回调参数是(ele, index) jq是(index, ele)
+
+原生没有返回值 jq是被遍历的数组
+
+**遍历对象**
+
+```js
+    let obj = {name: 'demo', age: 18, gender: 'male'}
+    for(let key in obj) {
+      console.log(key, obj[key]);
+    }
+```
+
+```js
+    let obj = {name: 'demo', age: 18, gender: 'male'}
+    $.each(obj, (key, value) => {
+      console.log(key, value);
+    })
+```
+
+原生通过for-in遍历对象 jq可以通过each遍历对象
 
 ### 说一下你对this的理解
 
