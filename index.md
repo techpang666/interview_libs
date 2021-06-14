@@ -1,6 +1,6 @@
 
 # 超级面试宝典🌻
->[加油/坚持/效率/输出](https://github.com/techpang666/interview_libs)
+>[加油/坚持/效率/输出(一些说明)](https://github.com/techpang666/interview_libs)
 
 ## 导航大纲
 - [html小分队🌳](#html小分队🌳)
