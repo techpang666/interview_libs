@@ -11,6 +11,7 @@
   - [如何让a标签鼠标悬停变色](#如何让a标签鼠标悬停变色)
   - [元素的alt和title有什么异同](#元素的alt和title有什么异同)
 - [css小分队🍉](#css小分队🍉)
+  - [文本超出显示省略号](#文本超出显示省略号)
   - [说一下圣杯布局和双飞翼布局的理解和区别](#说一下圣杯布局和双飞翼布局的理解和区别)
   - [css3有哪些新增的特性](#css3有哪些新增的特性)
   - [position属性的作用](#position属性的作用)
@@ -156,6 +157,26 @@ alt作为图片的**替代文字**出现，title作为图片的解释文字出�
 
 ---
 ## css小分队🍉
+
+### 文本超出显示省略号
+
+```css
+/* 多行显示省略号 */
+.more_line {
+	overflow: hidden; /* 超出隐藏 */
+	text-overflow: ellipsis; /* 用省略号表示被截断的文本 */
+	display: -webkit-box; /* 设置弹性伸缩盒子 */
+	-webkit-box-orient: vertical; /* 设置伸缩盒子的子元素排列方式(从上到下垂直排列) */
+	-webkit-line-clamp: 2; /* 第几行开始显示省略号 */
+}
+
+/* 单行显示省略号 */
+.one_line {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap; /* 合并元素内的空白 */
+}
+```
 
 ### 说一下圣杯布局和双飞翼布局的理解和区别
 
