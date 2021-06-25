@@ -731,6 +731,13 @@ toString()在对象的时候 就变成"[object Object]"
 
 表示数组的时候 就变成数组内容以逗号连接的字符串 相当于Array.join(',')
 
+```js
+let arr = [1, 2, 3].toString();
+let obj = { a: 1 }.toString();
+console.log(arr); /* 1,2,3 */
+console.log(obj); /* [object Object] */
+```
+
 valueOf的优先级比toString高
 
 ### Object是在堆还是栈里面
