@@ -608,11 +608,15 @@ console.log(obj);
 
 ### 说一下常用的数组方法
 
-1. push
-2. map
-3. sort
-4. splice
-5. forEach
+1. push(更新数组)
+2. map(返回每个元素调用函数后的返回值)
+3. sort(排序数组)
+4. splice(指定索引添加/删除元素)
+5. forEach(遍历数组)
+6. shift(删除第一个元素)
+7. pop(删除最后一个元素)
+8. includes(判断是否存在指定值)
+9. indexOf(返回指定值的第一个索引 不存在返回-1)
 
 ### typeof的返回值
 
