@@ -275,8 +275,8 @@ css有两种盒子模型 分别是标准盒子模型和怪异盒子模型
 ```css
 .demo {
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: center; /* 水平居中 */
+	align-items: center; /* 垂直居中 */
 }
 ```
 
@@ -979,7 +979,11 @@ code通过wx.login()获取
 
 用户信息通过wx.getUserProfile()获取 数据在res里面
 
-然后通过wx.setStorageSync()缓存用户信息 wx.getStorageSync()进行获取用户信息 this.setData()更新数据
+然后通过wx.setStorageSync()缓存用户信息
+
+wx.getStorageSync()进行获取用户信息
+
+this.setData()更新数据
 
 ---
 ## http协议小分队🌐
@@ -1030,9 +1034,9 @@ proxy是在项目开发的时候使用 上线了一般接口和项目都是在�
 - 301 永久重定向
 - 302 临时重定向
 - 304 使用缓存不改变
+- 400 错误请求
 - 401 请求授权失败
 - 403 禁止访问
-- 400 错误请求
 - 404 找不到资源
 - 500 服务器内部错误
 - 504 网关超时
