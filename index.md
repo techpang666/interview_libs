@@ -27,6 +27,7 @@
   - [简述下你理解的优雅降级和渐进增强](#简述下你理解的优雅降级和渐进增强)
   - [css可以继承的属性](#css可以继承的属性)
 - [js小分队🐎](#js小分队🐎)
+  - [说一下promise的all方法](#说一下promise的all方法)
   - [浏览器存储方式的应用场景](#浏览器存储方式的应用场景)
   - [浏览器存储方式的区别](#浏览器存储方式的区别)
   - [jq中each和js中forEach的区别](#jq中each和js中forEach的区别)
@@ -337,6 +338,29 @@ css有两种盒子模型 分别是标准盒子模型和怪异盒子模型
 
 ---
 ## js小分队🐎
+
+### 说一下promise的all方法
+
+Promise.all()方法用于将多个promise实例包装成一个新的promise实例
+
+```js
+// 接受一个数组作为参数
+const p = Promise.all([p1, p2, p3])
+```
+
+p的状态由数组中的promise实例决定的 分为两种情况
+
+**resolved情况**
+
+只有数组中的promise实例都为resolved p的状态才是resolved
+
+此时数组中的promise实例的返回值会组成一个数组 传递给p的回调函数
+
+**rejected情况**
+
+如果数组中的promise实例有一个被rejected了 p的状态就为rejected
+
+此时第一个被rejected的实例的返回值 会传递给p的回调函数
 
 ### 浏览器存储方式的应用场景
 
