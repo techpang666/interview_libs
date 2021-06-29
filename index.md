@@ -27,7 +27,6 @@
   - [简述下你理解的优雅降级和渐进增强](#简述下你理解的优雅降级和渐进增强)
   - [css可以继承的属性](#css可以继承的属性)
 - [js小分队🐎](#js小分队🐎)
-  - [什么是MVVM](#什么是MVVM)
   - [说一下es6新增的特性](#说一下es6新增的特性)
   - [说一下promise](#说一下promise)
   - [说一下promise的all方法](#说一下promise的all方法)
@@ -63,6 +62,7 @@
   - [垃圾回收的两种方法](#垃圾回收的两种方法)
   - [说一下闭包](#说一下闭包)
 - [vue小分队🍖](#vue小分队🍖)
+  - [什么是MVVM](#什么是MVVM)
   - [vue中的key有什么作用](#vue中的key有什么作用)
   - [v-show和v-if的区别](#v-show和v-if的区别)
   - [为什么要替换defineProperty](#为什么要替换defineProperty)
@@ -342,24 +342,6 @@ css有两种盒子模型 分别是标准盒子模型和怪异盒子模型
 
 ---
 ## js小分队🐎
-
-### 什么是MVVM
-
-- model层(模型层)
-- view层(视图层)
-- viewmodel层(视图模型层)
-
-model层 通过ajax/fetch完成客户端和服务端的业务模型同步
-
-view层 作为视图模板的存在
-
-viewmodel层 负责暴露数据给view层
-
-对view层的(指令声明/事件绑定声明/数据绑定声明)进行实际业务的实现
-
-viewmodel的底层会监听object.defineproperty 当数据变化的时候 view层自动更新
-
-**vue的实例就是属于viewmodel**
 
 ### 说一下es6新增的特性
 
@@ -910,6 +892,24 @@ valueOf的优先级比toString高
 
 ---
 ## vue小分队🍖
+
+### 什么是MVVM
+
+- model层(模型层)
+- view层(视图层)
+- viewmodel层(视图模型层)
+
+model层 通过ajax/fetch完成客户端和服务端的业务模型同步
+
+view层 作为视图模板的存在
+
+viewmodel层 负责暴露数据给view层
+
+对view层的(指令声明/事件绑定声明/数据绑定声明)进行实际业务的实现
+
+viewmodel的底层会监听object.defineproperty 当数据变化的时候 view层自动更新
+
+**vue的实例就是属于viewmodel**
 
 ### vue中的key有什么作用
 
