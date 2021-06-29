@@ -63,6 +63,7 @@
   - [垃圾回收的两种方法](#垃圾回收的两种方法)
   - [说一下闭包](#说一下闭包)
 - [vue小分队🍖](#vue小分队🍖)
+  - [vue中的key有什么作用](#vue中的key有什么作用)
   - [v-show和v-if的区别](#v-show和v-if的区别)
   - [为什么要替换defineProperty](#为什么要替换defineProperty)
   - [vue3和vue2的区别](#vue3和vue2的区别)
@@ -909,6 +910,12 @@ valueOf的优先级比toString高
 
 ---
 ## vue小分队🍖
+
+### vue中的key有什么作用
+
+key的主要作用是为了高效更新虚拟DOM
+
+通过这个key 我们的diff操作可以更加准确快速
 
 ### v-show和v-if的区别
 
