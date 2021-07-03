@@ -86,7 +86,7 @@
   - [说一下你知道的状态码](#说一下你知道的状态码)
 - [其他小分队🔫](#其他小分队🔫)
   - [常用的五个网站](#常用的五个网站)
-- [一些其他的私有数据😈](https://github.com/techpang666/cloud_office/blob/master/markdown/interview_libs/setout/interview_essay.md)
+- [一些私有数据😈](https://github.com/techpang666/cloud_office/blob/master/markdown/interview_libs/setout/interview_essay.md)
 
 ---
 ## html小分队🌳
