@@ -197,6 +197,8 @@ alt作为图片的**替代文字**出现，title作为图片的解释文字出�
 }
 ```
 
+[**👉Return Top👆**](#导航大纲)
+
 ### 说一下圣杯布局和双飞翼布局的理解和区别
 
 **作用**
@@ -227,6 +229,8 @@ alt作为图片的**替代文字**出现，title作为图片的解释文字出�
 
 在该子div里用`margin-left/margin-right`为左右两栏div留出位置
 
+[**👉Return Top👆**](#导航大纲)
+
 ### css3有哪些新增的特性
 
 1. 边框圆角
@@ -248,6 +252,8 @@ alt作为图片的**替代文字**出现，title作为图片的解释文字出�
 - transition(过渡动画)
 - animation(自定义动画)
 
+[**👉Return Top👆**](#导航大纲)
+
 ### position属性的作用
 
 1. static(默认值 标准文档流)
@@ -257,6 +263,8 @@ alt作为图片的**替代文字**出现，title作为图片的解释文字出�
 5. sticky(动态固定 relative/fixed的结合)
 6. inherit(继承父元素的position属性)
 
+[**👉Return Top👆**](#导航大纲)
+
 ### 如何取消li的默认样式
 
 ```css
@@ -265,11 +273,15 @@ alt作为图片的**替代文字**出现，title作为图片的解释文字出�
 }
 ```
 
+[**👉Return Top👆**](#导航大纲)
+
 ### 清除浮动的方式及优缺点
 
 - 在浮动元素后使用一个带clear属性的空元素(引入了冗余的元素)
 - 用overflow: hidden清除浮动(有可能造成溢出元素不可见 影响展示效果)
 - 用after伪元素清除浮动(bootstrap框架采用的清除浮动的方法)
+
+[**👉Return Top👆**](#导航大纲)
 
 ### 说一下盒子模型的理解
 
@@ -287,6 +299,8 @@ css有两种盒子模型 分别是标准盒子模型和怪异盒子模型
 }
 ```
 
+[**👉Return Top👆**](#导航大纲)
+
 ### 使用flex实现一个上下左右居中的布局
 
 ```css
@@ -296,6 +310,8 @@ css有两种盒子模型 分别是标准盒子模型和怪异盒子模型
 	align-items: center; /* 垂直居中 */
 }
 ```
+
+[**👉Return Top👆**](#导航大纲)
 
 ### css有哪些选择器
 
@@ -310,9 +326,13 @@ css有两种盒子模型 分别是标准盒子模型和怪异盒子模型
 - 伪类选择器
 - 伪元素选择器
 
+[**👉Return Top👆**](#导航大纲)
+
 ### css样式的优先级
 
 !important > 内联样式 > ID 选择器 > 类选择器 = 属性选择器 = 伪类选择器 > 标签选择器 = 伪元素选择器 > 通配符选择器 > 继承 > 浏览器默认属性
+
+[**👉Return Top👆**](#导航大纲)
 
 ### 常见的自适应布局
 
@@ -321,6 +341,8 @@ css有两种盒子模型 分别是标准盒子模型和怪异盒子模型
 - 双飞翼布局
 
 **圣杯/双飞翼都是用float实现的**
+
+[**👉Return Top👆**](#导航大纲)
 
 ### css常用的布局方式有哪些
 
@@ -331,6 +353,8 @@ css有两种盒子模型 分别是标准盒子模型和怪异盒子模型
 5. **flex布局** css3的布局可以非常灵活地进行布局和排版
 6. **grid布局** 网格布局
 
+[**👉Return Top👆**](#导航大纲)
+
 ### style标签写在body前和body后的区别是什么
 
 放在body前会跟HTML同时渲染
@@ -339,10 +363,14 @@ css有两种盒子模型 分别是标准盒子模型和怪异盒子模型
 
 则会导致一开始出现一个没有样式的界面，再跳到有样式的界面
 
+[**👉Return Top👆**](#导航大纲)
+
 ### 简述下你理解的优雅降级和渐进增强
 
 - **优雅降级** 先做好一个完善的具备完整体验的版本，再向下做兼容
 - **渐进增强** 先做好一个可以基本正常使用的版本，再慢慢丰富体验和内容
+
+[**👉Return Top👆**](#导航大纲)
 
 ### css可以继承的属性
 
@@ -351,6 +379,8 @@ css有两种盒子模型 分别是标准盒子模型和怪异盒子模型
 - font-weight
 - font-style
 - font-family
+
+[**👉Return Top👆**](#导航大纲)
 
 ---
 ## js小分队🐎
@@ -364,6 +394,8 @@ css有两种盒子模型 分别是标准盒子模型和怪异盒子模型
 - Promise
 - Class类
 - Symbol数据类型
+
+[**👉Return Top👆**](#导航大纲)
 
 ### 说一下promise
 
@@ -391,6 +423,8 @@ promise.then((value) => {
 })
 ```
 
+[**👉Return Top👆**](#导航大纲)
+
 ### 说一下promise的all方法
 
 Promise.all()方法用于将多个promise实例包装成一个新的promise实例
@@ -414,11 +448,15 @@ p的状态由数组中的promise实例决定的 分为两种情况
 
 此时第一个被rejected的实例的返回值 会传递给p的回调函数
 
+[**👉Return Top👆**](#导航大纲)
+
 ### 浏览器存储方式的应用场景
 
 - cookie用于保存一些很小的数据 比如会话标识
 - sessionStorage用于存储一个会话中的数据
 - localStorage用于持久化数据
+
+[**👉Return Top👆**](#导航大纲)
 
 ### 浏览器存储方式的区别
 
@@ -452,6 +490,8 @@ localStorage始终有效 即使窗口或浏览器关闭也一直保存 可以做
 localstorage和cookie在所有同源窗口中都是共享的
 
 sessionStorage不在不同的窗口中共享 即使是同一个页面
+
+[**👉Return Top👆**](#导航大纲)
 
 ### jq中each和js中forEach的区别
 
@@ -494,6 +534,8 @@ sessionStorage不在不同的窗口中共享 即使是同一个页面
 ```
 
 原生通过for-in遍历对象 jq可以通过each遍历对象
+
+[**👉Return Top👆**](#导航大纲)
 
 ### 说一下你对this的理解
 
@@ -554,6 +596,8 @@ bind()方法不调用函数 它会创建并返回一个新的函数
 
 并且由于箭头函数没有属于自己的this，它是**不能被new调用的**
 
+[**👉Return Top👆**](#导航大纲)
+
 ### 用递归实现数组长度为5且元素的随机数在2-32间不重复的值
 
 ```js
@@ -590,12 +634,16 @@ function randomNumber() {
 }
 ```
 
+[**👉Return Top👆**](#导航大纲)
+
 ### 如何去掉字符串中的空格
 
 ```js
 let str = ' 1 2 345 6    ';
 console.log(str.split(' ').join('')); /* 123456 */
 ```
+
+[**👉Return Top👆**](#导航大纲)
 
 ### 删除字符串中最后一个字符
 
@@ -609,6 +657,8 @@ function trim(str) {
 
 console.log(trim('essdgdg')); /* essdgd */
 ```
+
+[**👉Return Top👆**](#导航大纲)
 
 ### 写一个方法把下划线命名转成驼峰命名
 
@@ -628,6 +678,8 @@ let testStr = 'if_you_are_my_world';
 console.log(toCamelCase(testStr)); /* ifYouAreMyWorld */
 ```
 
+[**👉Return Top👆**](#导航大纲)
+
 ### 造成内存泄漏的操作有哪些
 
 1. 闭包
@@ -635,6 +687,8 @@ console.log(toCamelCase(testStr)); /* ifYouAreMyWorld */
 3. 死循环
 4. 没有使用的全局变量
 5. setInterval(定时器)没有被清除
+
+[**👉Return Top👆**](#导航大纲)
 
 ### window对象和document对象有什么区别
 
@@ -662,6 +716,8 @@ document对象可以让我们通过js对HTML页面中的所有元素进行访问
 
 document对象是window对象的一部分 可以通过window.document属性对其进行访问
 
+[**👉Return Top👆**](#导航大纲)
+
 ### 写一个获取数组的最大最小值的方法
 
 ```js
@@ -674,6 +730,8 @@ console.log(min_res); /* 25 */
 console.log(Math.min.apply(this, demo) === Math.min.apply(Array, demo)); /* true */
 ```
 
+[**👉Return Top👆**](#导航大纲)
+
 ### 如何删除对象的a属性
 
 ```js
@@ -681,6 +739,8 @@ let obj = { a: 0, b: 1 };
 delete obj.a;
 console.log(obj);
 ```
+
+[**👉Return Top👆**](#导航大纲)
 
 ### 说一下常用的数组方法
 
@@ -693,6 +753,8 @@ console.log(obj);
 7. pop(删除最后一个元素)
 8. includes(判断是否存在指定值)
 9. indexOf(返回指定值的第一个索引 不存在返回-1)
+
+[**👉Return Top👆**](#导航大纲)
 
 ### typeof的返回值
 
@@ -710,6 +772,8 @@ console.log(obj);
 - array需要通过toString.call()判断 typeof不能判断数组
 - symbol为符号
 
+[**👉Return Top👆**](#导航大纲)
+
 ### 说一下null和undefined的区别
 
 null只有一个值 就是null 它表示空值
@@ -725,6 +789,8 @@ undefined的典型用法
 2. 变量被声明了，但没有赋值时，就等于undefined
 3. 对象没有赋值的属性，该属性的值为undefined
 4. 函数没有返回值时，默认返回undefined
+
+[**👉Return Top👆**](#导航大纲)
 
 ### 说一下js的数据类型
 
@@ -743,6 +809,8 @@ undefined的典型用法
 2. function
 3. array
 
+[**👉Return Top👆**](#导航大纲)
+
 ### 浅拷贝和深拷贝的区别及如何实现深拷贝
 
 区别在于是否开辟了一个新的地址
@@ -757,11 +825,15 @@ undefined的典型用法
 
 这样就实现了深拷贝
 
+[**👉Return Top👆**](#导航大纲)
+
 ### 请用一行代码实现深拷贝
 
 ```js
 let demo = JSON.parse(JSON.stringify(obj))
 ```
+
+[**👉Return Top👆**](#导航大纲)
 
 ### 适合用事件委托的事件有哪些
 
@@ -771,6 +843,8 @@ let demo = JSON.parse(JSON.stringify(obj))
 - keydown
 - keyup
 - keypress
+
+[**👉Return Top👆**](#导航大纲)
 
 ### 什么是事件委托
 
@@ -784,17 +858,25 @@ let demo = JSON.parse(JSON.stringify(obj))
 - 事件委托基于冒泡，对于**不冒泡的事件**不支持
 - 层级过多，冒泡过程中，**可能会被某层阻止掉**
 
+[**👉Return Top👆**](#导航大纲)
+
 ### 什么是冒泡事件
 
 在一个按钮中绑定一个click事件 它会依次在父元素中被触发
+
+[**👉Return Top👆**](#导航大纲)
 
 ### 如何取消默认事件
 
 通过e.preventDefault()
 
+[**👉Return Top👆**](#导航大纲)
+
 ### 如何防止冒泡和捕获事件
 
 通过e.stopPropagation()
+
+[**👉Return Top👆**](#导航大纲)
 
 ### 说一下js有哪些内置对象
 
@@ -808,6 +890,8 @@ let demo = JSON.parse(JSON.stringify(obj))
 - 基础对象Object
 - 函数对象Function
 - 函数参数集合arguments
+
+[**👉Return Top👆**](#导航大纲)
 
 ### 说一下原型对象
 
@@ -823,6 +907,8 @@ let demo = JSON.parse(JSON.stringify(obj))
 
 hasOwnProperty就是用来判断某个属性是不是自己的
 
+[**👉Return Top👆**](#导航大纲)
+
 ### 说一下原型链
 
 每个对象都有一个__proto__属性 指向它的构造函数的原型
@@ -833,6 +919,8 @@ hasOwnProperty就是用来判断某个属性是不是自己的
 
 这样就形成了链式结构 我们称之为原型链
 
+[**👉Return Top👆**](#导航大纲)
+
 ### 说一下作用域链
 
 函数内部可以访问到外部变量
@@ -840,6 +928,8 @@ hasOwnProperty就是用来判断某个属性是不是自己的
 外部函数可以访问到全局变量
 
 这样形成的变量作用域链式结构 被称为作用域链
+
+[**👉Return Top👆**](#导航大纲)
 
 ### toString和valueOf的区别
 
@@ -861,6 +951,8 @@ console.log(obj); /* [object Object] */
 
 valueOf的优先级比toString高
 
+[**👉Return Top👆**](#导航大纲)
+
 ### Object是在堆还是栈里面
 
 **堆里面**
@@ -868,6 +960,8 @@ valueOf的优先级比toString高
 栈内存主要用于存储各种基本类型的变量 比如Boolean/Number/String/Undefined/Null
 
 堆内存主要负责像对象Object这种变量类型的存储
+
+[**👉Return Top👆**](#导航大纲)
 
 ### 垃圾回收的两种方法
 
@@ -892,6 +986,8 @@ valueOf的优先级比toString高
 
 标记清除算法将“不再使用的对象”定义为“无法达到的对象”
 
+[**👉Return Top👆**](#导航大纲)
+
 ### 说一下闭包
 
 闭包是一个函数嵌套另一个函数
@@ -901,6 +997,8 @@ valueOf的优先级比toString高
 缺点会造成内存泄漏
 
 闭包最大的作用就是用来变量私有
+
+[**👉Return Top👆**](#导航大纲)
 
 ---
 ## vue小分队🍖
@@ -923,11 +1021,15 @@ viewmodel的底层会监听object.defineproperty 当数据变化的时候 view�
 
 **vue的实例就是属于viewmodel**
 
+[**👉Return Top👆**](#导航大纲)
+
 ### vue中的key有什么作用
 
 key的主要作用是为了高效更新虚拟DOM
 
 通过这个key 我们的diff操作可以更加准确快速
+
+[**👉Return Top👆**](#导航大纲)
 
 ### v-show和v-if的区别
 
@@ -938,6 +1040,8 @@ key的主要作用是为了高效更新虚拟DOM
 2. v-show是通过修改display属性让元素显示隐藏的
 3. v-if有更高的切换开销 而v-show是有更高的首次渲染开销
 
+[**👉Return Top👆**](#导航大纲)
+
 ### 为什么要替换defineProperty
 
 defineProperty只能响应**首次渲染时候的属性**
@@ -945,6 +1049,8 @@ defineProperty只能响应**首次渲染时候的属性**
 Proxy需要的是**整体** 不需要关心里面有什么属性
 
 **而且Proxy的配置项有13种** 可以做更细致的事情 这是defineProperty做不到的
+
+[**👉Return Top👆**](#导航大纲)
 
 ### vue3和vue2的区别
 
@@ -954,6 +1060,8 @@ Proxy需要的是**整体** 不需要关心里面有什么属性
 4. typeScript的支持
 5. 打包体积的优化
 6. 使用自己的构建工具vite
+
+[**👉Return Top👆**](#导航大纲)
 
 ### 虚拟dom的优劣
 
@@ -970,11 +1078,15 @@ Proxy需要的是**整体** 不需要关心里面有什么属性
 
 **无法进行极致优化** 在一些性能要求极高的应用中虚拟DOM无法进行针对性的极致优化
 
+[**👉Return Top👆**](#导航大纲)
+
 ### 虚拟dom的实现原理
 
 1. 虚拟DOM本质上是JavaScript对象,是对真实DOM的抽象
 2. 状态变更时，记录新树和旧树的差异
 3. 最后把差异更新到真正的dom中
+
+[**👉Return Top👆**](#导航大纲)
 
 ### 说一下双向绑定的原理
 
@@ -983,6 +1095,8 @@ Proxy需要的是**整体** 不需要关心里面有什么属性
 当属性值发生变化的时候 我们获取变化进行后续的操作
 
 vue3通过proxy进行类似的操作
+
+[**👉Return Top👆**](#导航大纲)
 
 ---
 ## 小程序小分队👻
@@ -1005,6 +1119,8 @@ vue3通过proxy进行类似的操作
 这时候就可以通过订单编号获取预支付参数(五个参数)
 
 然后通过wx.requestPayment()传入预支付参数 就可以发起微信支付了
+
+[**👉Return Top👆**](#导航大纲)
 
 ### 小程序怎么实现双向绑定
 
@@ -1034,9 +1150,13 @@ vue3通过proxy进行类似的操作
   },
 ```
 
+[**👉Return Top👆**](#导航大纲)
+
 ### bindtap和catchtap的区别
 
 bindtap不能阻止事件冒泡 catchtap可以
+
+[**👉Return Top👆**](#导航大纲)
 
 ### 小程序的本地存储和web的区别
 
@@ -1055,21 +1175,29 @@ web不管存入什么类型的数据都会通过toString()变成字符串存储
 
 小程序不存在什么类型转换 存放什么类型的数据 获取的时候就是什么类型的数据
 
+[**👉Return Top👆**](#导航大纲)
+
 ### setData和data的区别
 
 this.setData()用于将数据从逻辑层发送到视图层 同时改变对应的this.data的值
 
 用this.data会造成页面内容不更新的问题
 
+[**👉Return Top👆**](#导航大纲)
+
 ### open-type的作用
 
 用于获取手机号/客服/用户信息等等
+
+[**👉Return Top👆**](#导航大纲)
 
 ### 如何获取用户信息
 
 通过wx.getUserProfile()获取
 
 原来是通过open-type="getUserInfo" 然后数据在e.detail里面
+
+[**👉Return Top👆**](#导航大纲)
 
 ### 如何授权登录
 
@@ -1085,6 +1213,8 @@ wx.getStorageSync()进行获取用户信息
 
 this.setData()更新数据
 
+[**👉Return Top👆**](#导航大纲)
+
 ---
 ## http协议小分队🌐
 
@@ -1096,6 +1226,8 @@ this.setData()更新数据
 
 只要有一个不相同就是跨域
 
+[**👉Return Top👆**](#导航大纲)
+
 ### 浏览器输入url后发生了什么
 
 1. DNS解析
@@ -1104,6 +1236,8 @@ this.setData()更新数据
 4. 服务器处理请求 并返回HTTP报文
 5. 浏览器解析渲染页面
 6. 连接结束
+
+[**👉Return Top👆**](#导航大纲)
 
 ### 说一下跨域及如何解决跨域
 
@@ -1119,6 +1253,8 @@ this.setData()更新数据
 jsonp的话 只是加它并不能处理跨域问题 因为它不能post请求
 
 proxy是在项目开发的时候使用 上线了一般接口和项目都是在同一个服务器 也就不存在跨域问题了
+
+[**👉Return Top👆**](#导航大纲)
 
 ### 说一下你知道的状态码
 
@@ -1141,6 +1277,8 @@ proxy是在项目开发的时候使用 上线了一般接口和项目都是在�
 - 500 服务器内部错误
 - 504 网关超时
 
+[**👉Return Top👆**](#导航大纲)
+
 ---
 ## 其他小分队🔫
 
@@ -1151,6 +1289,8 @@ proxy是在项目开发的时候使用 上线了一般接口和项目都是在�
 3. 掘金
 4. 相关技术官网文档
 5. 哔哩哔哩
+
+[**👉Return Top👆**](#导航大纲)
 
 ------
 ![end](https://gitee.com/techpang/img_emoji_libs/raw/master/img_bed/markdown_images/end.jpg '富婆加我吧不想努力了')
