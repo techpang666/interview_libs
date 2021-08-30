@@ -27,6 +27,7 @@
   - [简述下你理解的优雅降级和渐进增强](#简述下你理解的优雅降级和渐进增强)
   - [css可以继承的属性](#css可以继承的属性)
 - [js小分队🐎](#js小分队🐎)
+  - [JavaScript的参数是以什么方式进行传递的](#JavaScript的参数是以什么方式进行传递的)
   - [说一下js的继承](#说一下js的继承)
   - [说一下es6新增的特性](#说一下es6新增的特性)
   - [说一下promise](#说一下promise)
@@ -39,7 +40,9 @@
   - [如何去掉字符串中的空格](#如何去掉字符串中的空格)
   - [删除字符串中最后一个字符](#删除字符串中最后一个字符)
   - [写一个方法把下划线命名转成驼峰命名](#写一个方法把下划线命名转成驼峰命名)
+  - [JavaScript的回收机制](#JavaScript的回收机制)
   - [造成内存泄漏的操作有哪些](#造成内存泄漏的操作有哪些)
+  - [子函数在作用域内会不会被释放](#子函数在作用域内会不会被释放)
   - [window对象和document对象有什么区别](#window对象和document对象有什么区别)
   - [写一个获取数组的最大最小值的方法](#写一个获取数组的最大最小值的方法)
   - [如何删除对象的a属性](#如何删除对象的a属性)
@@ -63,6 +66,7 @@
   - [垃圾回收的两种方法](#垃圾回收的两种方法)
   - [说一下闭包](#说一下闭包)
 - [vue小分队🍖](#vue小分队🍖)
+  - [说一下自定义指令](#说一下自定义指令)
   - [什么是MVVM](#什么是MVVM)
   - [vue中的key有什么作用](#vue中的key有什么作用)
   - [v-show和v-if的区别](#v-show和v-if的区别)
@@ -385,6 +389,13 @@ css有两种盒子模型 分别是标准盒子模型和怪异盒子模型
 
 ---
 ## js小分队🐎
+
+### JavaScript的参数是以什么方式进行传递的
+
+- 基本类型: 值传递
+- 复杂类型: 地址传递
+
+[**👉Return Top👆**](#导航大纲)
 
 ### 说一下js的继承
 
@@ -715,6 +726,17 @@ console.log(toCamelCase(testStr)); /* ifYouAreMyWorld */
 
 [**👉Return Top👆**](#导航大纲)
 
+### JavaScript的回收机制
+
+JS中内存的分配和回收都是自动完成的 在内存不使用的时候会被垃圾回收器自动回收
+
+被分配的内存 一般有如下的生命周期
+1. 内存分配: 当我们声明变量/函数/对象的时候 系统会自动分配内存
+2. 内存使用: 即读写内存 也就是使用变量/函数等等
+3. 内存回收: 系统会自动回收不再使用的内存 **全局变量一般不会被回收**
+
+[**👉Return Top👆**](#导航大纲)
+
 ### 造成内存泄漏的操作有哪些
 
 1. 闭包
@@ -722,6 +744,12 @@ console.log(toCamelCase(testStr)); /* ifYouAreMyWorld */
 3. 死循环
 4. 没有使用的全局变量
 5. setInterval(定时器)没有被清除
+
+[**👉Return Top👆**](#导航大纲)
+
+### 子函数在作用域内会不会被释放
+
+不会 这是闭包的缺点 会造成内存泄漏
 
 [**👉Return Top👆**](#导航大纲)
 
@@ -1035,8 +1063,59 @@ valueOf的优先级比toString高
 
 [**👉Return Top👆**](#导航大纲)
 
+
 ---
 ## vue小分队🍖
+
+### 说一下自定义指令
+
+自定义指令分为局部和全局 一般全局使用
+
+```js
+// 全局自定义指令
+Vue.directive('color', {
+  bind(el,binding) {
+    el.style.color = binding.value
+  },
+  update(el,binding) {
+    el.style.color = binding.value
+  }
+})
+```
+
+其中bind是在第一次绑定到元素时调用 update是在每次更新DOM的时候调用
+
+如果两者的逻辑都一样 可以通过function函数简写
+
+```js
+// 简写形式
+Vue.directive('color', function(el, binding) {
+  el.style.color = binding.value
+})
+```
+
+局部指令写法
+
+```js
+	directives: {
+    // 简写形式
+		color(el, binding) {
+			el.style.color = binding.value
+		}
+
+    // 常规写法
+		color: {
+			bind(el, binding) {
+				el.style.color = binding.value
+			},
+			update(el, binding) {
+				el.style.color = binding.value
+			}
+		}
+	}
+```
+
+[**👉Return Top👆**](#导航大纲)
 
 ### 什么是MVVM
 
