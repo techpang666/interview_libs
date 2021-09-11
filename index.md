@@ -27,6 +27,7 @@
   - [简述下你理解的优雅降级和渐进增强](#简述下你理解的优雅降级和渐进增强)
   - [css可以继承的属性](#css可以继承的属性)
 - [js小分队🐎](#js小分队🐎)
+  - [var/let/const的区别](#var/let/const的区别)
   - [JavaScript的参数是以什么方式进行传递的](#JavaScript的参数是以什么方式进行传递的)
   - [说一下js的继承](#说一下js的继承)
   - [说一下es6新增的特性](#说一下es6新增的特性)
@@ -66,9 +67,12 @@
   - [垃圾回收的两种方法](#垃圾回收的两种方法)
   - [说一下闭包](#说一下闭包)
 - [vue小分队🍖](#vue小分队🍖)
+  - [vue组件中的data为什么一定是函数](#vue组件中的data为什么一定是函数)
+  - [说一下vue的生命周期](#说一下vue的生命周期)
   - [说一下自定义指令](#说一下自定义指令)
   - [什么是MVVM](#什么是MVVM)
   - [vue中的key有什么作用](#vue中的key有什么作用)
+  - [vue同时使用v-for和v-if哪个先调用](#vue同时使用v-for和v-if哪个先调用)
   - [v-show和v-if的区别](#v-show和v-if的区别)
   - [为什么要替换defineProperty](#为什么要替换defineProperty)
   - [vue3和vue2的区别](#vue3和vue2的区别)
@@ -389,6 +393,25 @@ css有两种盒子模型 分别是标准盒子模型和怪异盒子模型
 
 ---
 ## js小分队🐎
+
+### var/let/const的区别
+
+let和const是es6新增的
+
+- 变量提升
+- 作用域
+- 初始值
+- 重复声明
+
+变量提升方面 只有var可以
+
+作用域方面 var是函数作用域 let和const是块级作用域 不支持外部访问
+
+初始值和重复声明方面 const在定义变量的时候需要赋值 且不可以重复声明 但是可以对数组元素或者对象属性进行修改 这个不算是重复声明
+
+然后const不能用来定义for循环的迭代变量 因为它违反了const不能重复声明这条限制
+
+[**👉Return Top👆**](#导航大纲)
 
 ### JavaScript的参数是以什么方式进行传递的
 
@@ -1063,9 +1086,47 @@ valueOf的优先级比toString高
 
 [**👉Return Top👆**](#导航大纲)
 
-
 ---
 ## vue小分队🍖
+
+### vue组件中的data为什么一定是函数
+
+如果data是一个函数的话 每次复用一次组件 就会返回一份新的data
+
+类似于给每个组件实例创建一个私有的数据空间 让各个组件实例都去维护自己的数据
+
+如果单纯的写成对象的形式 会导致所有组件共享一份data 会造成一个变全部变的结果
+
+所以就规定了vue的data必须是函数
+
+这是js的特性 跟vue本身设计无关
+
+js本身也是基于原型链和构造函数的 原型链上一般都是添加函数方法而非对象
+
+[**👉Return Top👆**](#导航大纲)
+
+### 说一下vue的生命周期
+
+常规8个 其实11个
+
+- beforeCreate(创建前)/created(创建后)
+- beforeMount(挂载前)/mounted(挂载后)
+- beforeUpdate(更新前)/updated(更新后)
+- beforeDestroy(销毁前)/destroyed(销毁后)
+- activated(激活时)/deactivated(停用时)
+- errorCaptured(错误调用时)
+
+然后我们常用的生命周期是created/mounted
+
+如果是请求一些数据 可以把方法放在created中
+
+如果要操作dom的话 需要把方法放在mounted中
+
+异步请求可以在created/mounted 具体看是否需要操作dom
+
+第一次页面加载的时候会触发beforeCreate/created/beforeMount/mounted这几个生命周期
+
+[**👉Return Top👆**](#导航大纲)
 
 ### 说一下自定义指令
 
@@ -1145,6 +1206,32 @@ key的主要作用是为了高效更新虚拟DOM
 
 [**👉Return Top👆**](#导航大纲)
 
+### vue同时使用v-for和v-if哪个先调用
+
+当v-if和v-for一起使用的时候 v-for的优先级会更高
+
+官方是不建议同时使用的 如果同时使用的话 每次v-for都会执行v-if 会造成不必要的计算 浪费性能
+
+可以通过computed计算属性过滤掉不需要显示的item
+
+```js
+computed: {
+  items() {
+    return this.list.filter(item => item.isShow)
+  }
+}
+```
+
+或者通过外层嵌套template 在这层中进行v-if判断 然后再进行内部v-for循环
+
+```html
+<template v-if="isShow">
+  <p v-for="item in list">
+</template>
+```
+
+[**👉Return Top👆**](#导航大纲)
+
 ### v-show和v-if的区别
 
 两者都是用来显示隐藏元素的
@@ -1153,6 +1240,7 @@ key的主要作用是为了高效更新虚拟DOM
 1. v-if是通过销毁和重建DOM让元素显示隐藏的
 2. v-show是通过修改display属性让元素显示隐藏的
 3. v-if有更高的切换开销 而v-show是有更高的首次渲染开销
+4. v-if有配套的v-if-else和v-else v-show没有
 
 [**👉Return Top👆**](#导航大纲)
 
