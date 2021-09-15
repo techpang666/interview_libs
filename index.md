@@ -31,6 +31,7 @@
   - [JavaScript的参数是以什么方式进行传递的](#JavaScript的参数是以什么方式进行传递的)
   - [说一下js的继承](#说一下js的继承)
   - [说一下es6新增的特性](#说一下es6新增的特性)
+  - [async/await是什么](#async/await是什么)
   - [说一下promise](#说一下promise)
   - [说一下promise的all方法](#说一下promise的all方法)
   - [浏览器存储方式的应用场景](#浏览器存储方式的应用场景)
@@ -67,6 +68,7 @@
   - [垃圾回收的两种方法](#垃圾回收的两种方法)
   - [说一下闭包](#说一下闭包)
 - [vue小分队🍖](#vue小分队🍖)
+  - [keep-alive的作用](#keep-alive的作用)
   - [vue组件中的data为什么一定是函数](#vue组件中的data为什么一定是函数)
   - [说一下vue的生命周期](#说一下vue的生命周期)
   - [说一下自定义指令](#说一下自定义指令)
@@ -466,6 +468,26 @@ student实例上有的属性 原型__proto__上不再需要这些属性
 
 [**👉Return Top👆**](#导航大纲)
 
+### async/await是什么
+
+```js
+async test() {
+	let res = await login()
+}
+```
+
+async/await是es8新增的 是基于promise的
+
+async用于声明一个异步函数 它会将一个常规函数转为promise 返回值也是一个promise对象
+
+await用于等待异步的功能执行完毕 会强制async函数中的代码等待 直到promise完成并返回结果
+
+相对于promise async/await的优势
+- 同步化代码的阅读体验 虽然promise摆脱了回调地狱 但是.then链式调用的阅读负担还是有的
+- 和同步代码更一致的错误处理方式 async/await可以使用更加成熟的try/catch做处理 比promise的错误捕获更加简洁直观
+
+[**👉Return Top👆**](#导航大纲)
+
 ### 说一下promise
 
 ```js
@@ -491,6 +513,14 @@ promise.then((value) => {
   // fail
 })
 ```
+
+Promise对象有两个特点
+1. 对象的状态不受外界影响
+2. 一旦状态改变就不会再变 任何时候都可以得到这个结果
+
+Promise也有一些缺点
+1. 无法取消promise 一旦新建就会立刻执行 无法中途取消
+2. 如果不设置回调 内部抛出的错误 不会反应到外部
 
 [**👉Return Top👆**](#导航大纲)
 
@@ -1088,6 +1118,18 @@ valueOf的优先级比toString高
 
 ---
 ## vue小分队🍖
+
+### keep-alive的作用
+
+keep-alive主要用于缓存不活动的组件实例 保留组件的状态 避免被重新渲染导致的性能问题
+
+当组件在keep-alive内被切换 组件的activated/deactivated这两个生命周期会被执行
+
+组件一旦被缓存 再次渲染就不会执行created/mounted生命周期
+
+要求同时只有一个子组件被渲染
+
+[**👉Return Top👆**](#导航大纲)
 
 ### vue组件中的data为什么一定是函数
 
