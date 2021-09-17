@@ -68,6 +68,8 @@
   - [垃圾回收的两种方法](#垃圾回收的两种方法)
   - [说一下闭包](#说一下闭包)
 - [vue小分队🍖](#vue小分队🍖)
+  - [组件通信的几种方式](#组件通信的几种方式)
+  - [如何理解vue的响应式系统](#如何理解vue的响应式系统)
   - [keep-alive的作用](#keep-alive的作用)
   - [vue组件中的data为什么一定是函数](#vue组件中的data为什么一定是函数)
   - [说一下vue的生命周期](#说一下vue的生命周期)
@@ -685,7 +687,7 @@ bind()方法不调用函数 它会创建并返回一个新的函数
 
 当使用new调用构造函数的时候 会创建一个新的对象
 
-这个新的对象的this就绑定到构造函数上面了
+这个新的对象的this就指向构造函数
 
 **箭头函数的this**
 
@@ -1119,6 +1121,28 @@ valueOf的优先级比toString高
 ---
 ## vue小分队🍖
 
+### 组件通信的几种方式
+
+1. `props/$emit`
+2. `$emit/$on`
+3. `vuex`
+4. `$parent/$children/$refs`
+5. `provide/inject`
+
+[**👉Return Top👆**](#导航大纲)
+
+### 如何理解vue的响应式系统
+
+任何component都会有一个与之对应的watcher实例
+
+vue的data上的属性都会被添加getter/setter属性
+
+当vue component render函数被执行的时候 data会被touch(即读写) getter方法就会被调用 此时vue会去记录此vue component所依赖的所有data(这个过程被称为依赖收集)
+
+当data被改动(主要是用户操作) setter方法就会被调用 vue会去通知所有依赖此data的组件调用他们的render函数进行更新
+
+[**👉Return Top👆**](#导航大纲)
+
 ### keep-alive的作用
 
 keep-alive主要用于缓存不活动的组件实例 保留组件的状态 避免被重新渲染导致的性能问题
@@ -1288,11 +1312,17 @@ computed: {
 
 ### 为什么要替换defineProperty
 
-defineProperty只能响应**首次渲染时候的属性**
+因为defineProperty无法对数组对象进行深度监听
 
-Proxy需要的是**整体** 不需要关心里面有什么属性
+defineProperty只能响应**首次渲染时候的属性** 后面添加的属性是不会渲染的
 
-**而且Proxy的配置项有13种** 可以做更细致的事情 这是defineProperty做不到的
+proxy可以直接监听数组/对象的变化而非属性
+
+proxy返回的是一个新的对象 我们可以直接操作新的对象就可以达到目的 而defineProperty只能遍历对象的属性进行修改
+
+**而且proxy的配置项有13种** 可以做更细致的事情 这是defineProperty做不到的
+
+defineProperty的优势就是兼容性好 可以支持ie9
 
 [**👉Return Top👆**](#导航大纲)
 
